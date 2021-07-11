@@ -64,5 +64,3 @@ class TestClass{method.capitalize()}():
         assert {module}.{class_member}().{method}({params_function_str}) == expected
 """
 )
-
-

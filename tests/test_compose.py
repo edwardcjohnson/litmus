@@ -32,6 +32,7 @@ class TestClassComposeTestModuleSkeleton():
         # pytest it on the next pytest run.
         # If file exists, delete it
         if os.path.isfile(actual_test_example_module):
+            print(f"Removing {actual_test_example_module}")
             os.remove(actual_test_example_module)
         else:
             print(f"Error: {actual_test_example_module} file not found")
