@@ -60,7 +60,7 @@ class TestClass{method.capitalize()}():
         ]
     )
     def test_return(self, params, expected):
-        import notebooks.{module} as {module}
+        import tests.{module} as {module}
         assert {module}.{class_member}().{method}({params_function_str}) == expected
 """
 )

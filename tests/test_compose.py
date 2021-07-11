@@ -22,12 +22,14 @@ class TestClassComposeTestModuleSkeleton():
         litmus.compose.compose_test_module_skeleton(params["module_file"])
         actual_test_example_module = "test_example_module.py"
         assert filecmp.cmp(
-            f"{this_path}/expected_test_example_module.py",
+            f"{this_path}/{expected}",
             actual_test_example_module,
             shallow=False
         )
 
-        # clean up test dir, by deleting the generated test_module
+        # Clean up test dir, by deleting the generated test module.
+        # You can keep the generated test module if you want to
+        # pytest it on the next pytest run.
         # If file exists, delete it
         if os.path.isfile(actual_test_example_module):
             os.remove(actual_test_example_module)
