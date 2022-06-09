@@ -1,5 +1,5 @@
 # litmus
-litmus is designed to create a unit test skeleton based on existing functions.
+litmus is designed to automatically create a unit test skeleton based on existing functions, saving you time writing unit tests for an existing code base.
 
 ## Installation
 ```
